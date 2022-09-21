@@ -1,7 +1,7 @@
 <!--
 Special delimiters are used to distinguish Jinja syntax from the static data in the template.
-Anything between {{ and }} is an expression that will be output to the final document.
-{% and %} denotes a control flow statement like if and for.
+Anything between { { and } } is an expression that will be output to the final document.
+{ % and % } denotes a control flow statement like if and for.
 
 url_for() is also automatically available, and is used to generate URLs to views instead of writing them out manually.
 
@@ -9,9 +9,9 @@ After the page title, and before the content, the template loops over each messa
 You used flash() in the views to show error messages, and this is the code that will display them.
 
 There are three blocks defined here that will be overridden in the other templates:
-1. {% block title %} will change the title displayed in the browser’s tab and window title.
-2. {% block header %} is similar to title but will change the title displayed on the page.
-3. {% block content %} is where the content of each page goes, such as the login form or a blog post.
+1. { % block title % } will change the title displayed in the browser’s tab and window title.
+2. { % block header % } is similar to title but will change the title displayed on the page.
+3. { % block content % } is where the content of each page goes, such as the login form or a blog post.
 -->
 
 <!doctype html>
